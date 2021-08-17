@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<document/>
+<html>
+<head>
+  <title>Map</title>
+  <script>
+    function display(n) {
+      document.getElementById("overlayedmap" + n).style.visibility = "visible";
+    }
+  </script>
+  <style>
+    #bigbox{
+      position: relative;
+      top: 0px;
+      left: 50px;
+    }
+    #map{
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }  
+    #overlayedmap1{
+      position: absolute;
+      top: 20px;
+      left:20px;
+      visibility: hidden;
+    }
+    .button
+  </style>
+</head>
+<body style="margin: 0; background-color: black;">
+  <div id="bigbox">
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+    <img id="map" src="images/map.png" height="3360" width="3520"/>
+    <img id="overlayedmap" src="images/overlayedmap.png"/>
+  </div>
+</body>
+</html>
